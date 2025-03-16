@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center; /* Centers text elements */
+        }
+        h2 {
+            text-align: center; /* Center the heading */
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-wrap: wrap; /* Allow wrapping if screen is small */
+            max-width: 90%; /* Prevent too much stretching */
+            margin: auto; /* Center the whole container */
+        }
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center; /* Center images in each column */
+        }
+        .column img {
+            width: 100%;
+            height: auto;
+            max-width: 300px; /* Set a limit for better layout */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .column img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Gallery</h2>
+
+    <div class="container">
+        <div class="column">
+            <img src="old-rusty-fishing-boat-slope-along-shore-lake.jpg" alt="Nature Column 1">
+            <img src="0747.jpg" alt="Nature Column 2">
+        </div>
+        <div class="column">
+            <img src="1467.jpg" alt="Nature Column 3">
+            <img src="2432.jpg" alt="Nature Column 4">
+        </div>
+        <div class="column">
+            <img src="4741.jpg" alt="Nature Column 5">
+            <img src="4895.jpg" alt="Nature Column 6">
+        </div>
+        <div class="column">
+            <img src="0022.jpg" alt="Nature Column 7">
+            <img src="6466.jpg" alt="Nature Column 8">
+        </div>
+        <div class="column">
+            <img src="57774.jpg" alt="Nature Column 9">
+            <img src="5345.jpg" alt="Nature Column 10">
+        </div>
+    </div>
+</body>
+</html>
