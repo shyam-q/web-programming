@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Simple Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculator-container">
+<h1>Simple Calculator</h1>
+<form name="calculator">
+<input type="number" name="num1" id="num1"
+
+placeholder="Enter first number" required>
+
+<input type="number" name="num2" id="num2"
+
+placeholder="Enter second number" required>
+
+<br><br>
+<button type="button"
+
+onclick="performOperation('+')">+</button>
+
+<button type="button"
+
+onclick="performOperation('-')">-</button>
+
+<button type="button"
+
+onclick="performOperation('*')">*</button>
+
+<button type="button"
+
+onclick="performOperation('/')">/</button>
+
+<br><br>
+<h3>Result: <span id="result">0</span></h3>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
